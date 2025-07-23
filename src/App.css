@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(43, 43, 44);
+    overflow: visible;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    padding-left: 3.5vw;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+.navi{
+    position: relative;
+}
+.nav{
+    background: linear-gradient(to right, rgb(17, 17, 17) , rgb(110, 108, 108), rgb(192, 190, 190));
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    overflow: visible;
+    width: 100%;
+} 
+
+.nav img{
+    height:100px;
+    width: 200px;
+}
+.searchbar{
+    padding-top: 20px;
+    padding-left: 80px;
+}
+.searchbar .custom-navbar {
+    background-color: transparent !important;
+    box-shadow: none; 
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    background: linear-gradient(to right, rgb(17, 17, 17) , rgb(110, 108, 108), rgb(192, 190, 190));
+    color: white;
+    bottom:0;
+    width: 100%;
+}
+.truncate-title {
+    display: -webkit-box;
+    display: box; /* fallback for some older browsers */
+    -webkit-line-clamp: 2;
+    line-clamp: 2; /* standard syntax */
+    -webkit-box-orient: vertical;
+    box-orient: vertical; /* optional fallback */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 2.5em; /* depends on font-size and line-height */
+  }
+  .truncate-text {
+    display: -webkit-box;
+    display: box; /* fallback */
+    -webkit-line-clamp: 4;
+    line-clamp: 4; /* standard */
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 6.4em; /* 3 lines × 1.5em each */
+  }
+@media only screen and (min-width:0) and (max-width:576){
+    .mandu{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        overflow: hidden;
+        width: 100%;
+    } 
+    
+    .nav img{
+        height:100px;
+        width: 200px;
+    }
+    .searchbar{
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+}
